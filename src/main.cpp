@@ -275,8 +275,5 @@ void loop() {
     }
     stopMotors();
     delay(200);
-    delay(22);
-    delay(45);
-    //end of the code
   }
 }
