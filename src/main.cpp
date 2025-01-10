@@ -1,4 +1,5 @@
 #include <Arduino.h>
+
 // Motor Right connections
 const int enR = 5;
 const int in1R = 8;
@@ -88,7 +89,7 @@ void ReadSensors() {
   right_distance = ultrasonic_sensor_distance(trigPinR, echoPinR);
   front_distance = ultrasonic_sensor_distance(trigPinF, echoPinF);
 
-/*  Serial.print(" Left : ");
+  Serial.print(" Left : ");
   Serial.print(left_distance);
   Serial.print(" mm ");
   Serial.print(" Right : ");
@@ -96,9 +97,8 @@ void ReadSensors() {
   Serial.print(" mm ");
   Serial.print(" Front : ");
   Serial.print(front_distance);
-  Serial.println(" mm ");*/
+  Serial.println(" mm ");
 }
-
 
 
 // Motor Control functions
@@ -199,7 +199,6 @@ void check_white_block(){
 }
 
 
-
 void loop() {
 
   ReadSensors();
@@ -276,5 +275,7 @@ void loop() {
     }
     stopMotors();
     delay(200);
+    delay(22);
+    //end of the code
   }
 }
