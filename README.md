@@ -1,1 +1,1 @@
-A mazerobot code to traverse through a 9*9 maze
+A mazerobot code to traverse through a maze using Front-First Algorithm
